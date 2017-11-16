@@ -14,3 +14,8 @@ Our group result for this assignment was **Mark: 30/35 – High Distinction**
 	 - BrowserSync
 	 - SASS
 	 - SVG Sprite generation
+
+## To Do:
+	
+ - Update readme.md
+ - Provide link to working example
