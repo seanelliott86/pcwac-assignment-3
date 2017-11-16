@@ -1,0 +1,16 @@
+.load-more{
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+
+	img {
+		visibility: hidden;
+	}
+
+	&.is-loading {
+		img {
+			visibility: visible;
+		}
+	}
+
+}

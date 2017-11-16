@@ -1,0 +1,108 @@
+// .card__header{
+	
+// }
+// .card__title{
+
+// }
+// .card__meta{
+
+// }
+// .card__img{
+
+// }
+// .card__text{
+
+// }
+// .card__summary{
+
+// }
+
+.card--whatsnew{
+	background-color: $white;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	border-top: solid 4px $lightBlue;
+	margin-bottom: 2rem;
+	position: relative;
+
+	@include mq($from: md) {
+	  padding-left: 14rem;
+	  border-top: none;
+	}
+
+	.card__header{
+		
+	}
+	.card__title{
+		margin: 0 0 0.5rem 0;
+		@include typography(h3);
+
+		a{
+			@include linkStyles;
+		}
+	}
+	.card__meta{
+		font-size: 0.8rem;
+		margin-bottom: 0.5rem;
+		margin-left: 0;
+		padding: 0;
+
+		li{
+			margin: 0;
+			display: inline-block;
+			padding-right: 0.5rem;
+			margin-right: 0.5rem;
+
+			&:not(:last-child){
+				border-right: solid 1px $darkGrey;
+			}
+		}
+
+		a{
+			@include linkStyles;
+		}
+	}
+	.card__imgwrap{
+		// overflow: hidden;
+		// height: 10rem;
+		// position: relative;
+
+		@include mq($from: md) {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  height: 100%;
+		  width: 14rem;
+		  overflow: hidden;
+		}
+	}
+	.card__img{
+		width: 100%;
+	  	height: 10rem;
+	  	object-fit: cover;
+
+	  	@include mq($from: sm) {
+	  	  height: 15rem;
+	  	}
+	}
+	.card__text{
+		background-color: $white;
+		position: relative;
+		z-index: 2;
+		padding: 1rem;
+
+		@include mq($from: sm) {
+		  margin: -1.5rem 1rem 0;
+		}
+
+		@include mq($from: md) {
+		  margin: 0;
+		  border-left: solid 4px $lightBlue;
+		}
+
+	}
+	.card__summary{
+		a{
+			@include linkStyles;
+		}
+	}
+}

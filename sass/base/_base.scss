@@ -1,0 +1,65 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;  -moz-box-sizing: inherit;  box-sizing: inherit;
+} 
+
+html{
+	background-color: $white;
+}
+
+body{
+	margin: 0;
+}
+
+:focus {outline:none;}
+
+.icon {
+  display: inline-block;
+  width: 1.4rem;
+  vertical-align: middle;
+  height: 1.4rem;
+}
+
+.icon-text{
+	background: none;
+	border: none;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	padding-top: 1.5rem;
+	line-height: 1;
+
+	.icon{
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translateX(-50%);
+		transition: width 0.3s ease, height 0.3s ease;
+	}
+
+	.sub{
+		display: inline-block;
+		vertical-align: bottom;
+		line-height: 1;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+	}
+
+	&:hover, &:focus{
+		.icon{
+			width: 2.7rem;
+			height: 2.7rem;
+		}
+
+		.sub{
+			opacity: 0;
+		}
+	}
+}
